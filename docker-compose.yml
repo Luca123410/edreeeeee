@@ -28,7 +28,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "3000:3000"
+      - "5000:5000"
     environment:
       DATABASE_URL: postgres://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
       TMDB_KEY: ${TMDB_KEY}
